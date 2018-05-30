@@ -1,0 +1,38 @@
+form {
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    width: 45rem;
+    margin-bottom: 2rem;
+}
+
+.list-group-item .bmd-form-group {
+    display: block;
+    padding-top: 0;
+}
+
+.list-group-item .bmd-form-group label {
+    margin-bottom: 0;
+}
+
+.list-group-item {
+    padding: 0.75rem 1rem;
+}
+
+.checkbox-inline, .checkbox label, .is-focused .checkbox-inline, .is-focused .checkbox label, .is-focused .radio-inline, .is-focused .radio label, .is-focused .switch label, .radio-inline, .radio label, .switch label {
+    color: #414141;
+}
+
+.form-inline .form-group:first-child {
+    flex: 1 1 auto;
+}
+
+.form-inline .form-group:first-child input {
+    width: 100%;
+}
