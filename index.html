@@ -22,13 +22,13 @@
     <div class="card">
         <div class="card-body">
             <h2 class="h4">Add new item</h2>
-            <form id="addTodos" action="" class="form-inline">
+            <form id="addTodoItemForm" action="" class="form-inline">
                 <div class="form-group mr-4">
-                    <label for="itemName" class="bmd-label-floating">Drink a beer</label>
-                    <input type="text" id="itemName" required="required" name="itemName" class="form-control">
+                    <label for="todoItemName" class="bmd-label-floating">New Item Label</label>
+                    <input type="text" id="todoItemName" required="required" name="itemName" class="form-control">
                 </div>
                 <span class="form-group bmd-form-group">
-                    <button type="submit" class="btn btn-primary btn-raised">Ajouter</button>
+                    <button type="submit" class="btn btn-primary btn-raised">Add</button>
                 </span>
             </form>
         </div>
@@ -40,12 +40,15 @@
 <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
         integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/arrive/2.4.1/arrive.js"></script>
 <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
         integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
         crossorigin="anonymous"></script>
 <script>$(document).ready(function () {
     $('body').bootstrapMaterialDesign();
 });</script>
+<script src="TotoList.js"></script>
+<script src="TotoItem.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
