@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-Do</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
     <link rel="stylesheet"
           href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
           integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
@@ -15,6 +16,7 @@
 <div class="container">
     <h1>To-Do List</h1>
     <div class="card">
+        <button id="deleteAllItems" class="btn btn-primary">Remove all selected</button>
         <ul id="todoList" class="list-group">
         </ul>
     </div>
@@ -25,7 +27,7 @@
             <form id="addTodoItemForm" action="" class="form-inline">
                 <div class="form-group mr-4">
                     <label for="todoItemName" class="bmd-label-floating">New Item Label</label>
-                    <input type="text" id="todoItemName" required="required" name="itemName" class="form-control">
+                    <input value="" type="text" id="todoItemName" required="required" name="itemName" class="form-control">
                 </div>
                 <span class="form-group bmd-form-group">
                     <button type="submit" class="btn btn-primary btn-raised">Add</button>
@@ -47,8 +49,6 @@
 <script>$(document).ready(function () {
     $('body').bootstrapMaterialDesign();
 });</script>
-<script src="TotoList.js"></script>
-<script src="TotoItem.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
